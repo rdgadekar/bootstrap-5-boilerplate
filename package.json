@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap-5-boilerplate",
+  "version": "1.0.0",
+  "description": "A minimal and customizable boilerplate for projects using Bootstrap 5 SCSS. This setup allows you to override Bootstrap variables, write custom styles, and compile SCSS efficiently. Perfect for developers who want a clean and flexible Bootstrap 5 SCSS starter!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "sass": "^1.86.0",
+    "vite": "^6.2.4"
+  }
+}

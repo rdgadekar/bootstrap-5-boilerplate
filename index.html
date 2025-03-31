@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Boilerplate</title>
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+
+<body>
+  <!-- Container -->
+  <div class="d-flex flex-column gap-5 p-5">
+
+    <!-- Buttons Section -->
+    <section class="p-3 border rounded">
+      <h2>Buttons</h2>
+      <p>Buttons can have various styles and sizes.</p>
+      <button class="btn btn-primary">Primary Button</button>
+      <button class="btn btn-secondary">Secondary Button</button>
+      <button class="btn btn-success">Success Button</button>
+      <button class="btn btn-danger">Danger Button</button>
+      <button class="btn btn-warning">Warning Button</button>
+      <button class="btn btn-info">Info Button</button>
+      <button class="btn btn-light">Light Button</button>
+      <button class="btn btn-dark">Dark Button</button>
+      <button class="btn btn-link">Link Button</button>
+    </section>
+
+    <!-- Alerts Section -->
+    <section class="p-3 border rounded">
+      <h2>Alerts</h2>
+      <p>Bootstrap provides easy-to-use alerts for feedback messages.</p>
+      <div class="alert alert-primary" role="alert">
+        This is a primary alert!
+      </div>
+      <div class="alert alert-success" role="alert">
+        This is a success alert!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        This is a danger alert!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        This is a warning alert!
+      </div>
+      <div class="alert alert-info" role="alert">
+        This is an info alert!
+      </div>
+    </section>
+
+    <!-- Forms Section -->
+    <section class="p-3 border rounded">
+      <h2>Forms</h2>
+      <p>Common form elements like text inputs, checkboxes, radio buttons, and textarea.</p>
+
+      <!-- Basic Form -->
+      <form>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
+          <div class="invalid-feedback">
+            Please provide a valid email address.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="inputPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+          <div class="invalid-feedback">
+            Please provide a password.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="textarea" class="form-label">Textarea</label>
+          <textarea class="form-control" id="textarea" rows="3" placeholder="Enter your text here"></textarea>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+            <label class="form-check-label" for="checkbox1">
+              Check this checkbox
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+            <label class="form-check-label" for="checkbox2">
+              Another checkbox
+            </label>
+          </div>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="options" id="radio1" value="option1" checked>
+            <label class="form-check-label" for="radio1">
+              Option 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="options" id="radio2" value="option2">
+            <label class="form-check-label" for="radio2">
+              Option 2
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="p-3 border rounded">
+      <h2>Cards</h2>
+      <p>Cards are flexible content containers.</p>
+      <div class="card" style="width: 18rem;">
+        <img src="https://placehold.co/400" class="card-img-top" alt="Card image">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion Section -->
+    <section class="p-3 border rounded">
+      <h2>Accordion</h2>
+      <p>Accordion is used to toggle visibility of content.</p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Some placeholder content for the first accordion panel. This panel is shown by default.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Placeholder content for the second accordion panel. This one is hidden by default.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals Section -->
+    <section class="p-3 border rounded">
+      <h2>Modals</h2>
+      <p>Modals are used to display content in a dialog box.</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Content for the modal goes here.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section (Dark Background) -->
+    <footer class="border rounded text-center p-3">
+      <p class="mb-0">For a complete list of components and documentation, visit the <a href="https://getbootstrap.com" target="_blank" class="link-primary">Bootstrap website</a>.</p>
+    </footer>
+
+
+  </div>
+
+  <!-- Bootstrap JS & Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script type="module" src="./src/assets/js/index.js"></script>
+</body>
+
+</html>
