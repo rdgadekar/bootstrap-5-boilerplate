@@ -15,6 +15,10 @@
 @import 'bootstrap/scss/variables-dark';
 @import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/mixins';
+
+// Custom Utilities
+@import './utilities';
+
 @import 'bootstrap/scss/utilities';
 
 // Layout & components
@@ -56,3 +60,8 @@
 // Utilities
 @import 'bootstrap/scss/utilities/api';
 // scss-docs-end import-stack
+
+// Custom Files
+@import './components';
+@import './layout';
+@import './global';
